@@ -1,0 +1,33 @@
+{
+  "name": "@basketball7hero/image-hash",
+  "version": "1.0.1",
+  "description": "image-hash",
+  "scripts": {
+    "clean": "node ./scripts/clean.js",
+    "package": "node ./scripts/package.js",
+    "build": "yarn run clean && yarn run package && tsc",
+    "publish": "npm run build && npm publish dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basketball7hero/image-hash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basketball7hero/image-hash/issues"
+  },
+  "homepage": "https://github.com/basketball7hero/image-hash#readme",
+  "dependencies": {
+    "@types/lodash": "4.14.168",
+    "@types/tesseract.js": "0.0.2",
+    "lodash": "4.17.21",
+    "tesseract.js": "2.1.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "9.0.11",
+    "fs-extra": "9.1.0",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.4"
+  }
+}
